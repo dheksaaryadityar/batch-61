@@ -1,0 +1,165 @@
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e5e7eb;
+    }
+
+    .navbar {
+      background: white;
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .logo img {
+      height: 30px;
+    }
+
+    .nav-links {
+      list-style: none;
+      padding-inline-start: 0;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+    }
+
+    .nav-links a.active {
+      font-weight: 700;
+    }
+
+    .contact-me {
+      background: #1f2937;
+      color: white;
+      border: none;
+      padding: 7px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      display: flex;
+      gap: 30px;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .content {
+      flex: 2;
+    }
+
+    .content h1 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .content p {
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .btn-primary {
+      background: #1f2937;
+      color: white;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .download-cv {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .social-icons {
+      margin-top: 25px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .social-icons a {
+      color: black;
+      font-size: 24px;
+    }
+
+    .profile {
+      flex: 1;
+      text-align: center;
+    }
+
+    .profile img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      margin-bottom: 15px;
+    }
+
+    .profile h2 {
+      margin: 10px 0 5px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .profile p {
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .navbar {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .profile img {
+        width: 70%;
+        margin: 0 auto 15px;
+      }
+
+      .buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .btn-primary {
+        width: 100%;
+      }
+
+      .social-icons {
+        justify-content: center;
+      }
+    }
